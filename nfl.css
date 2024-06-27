@@ -1,0 +1,197 @@
+/* Reset de CSS para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo do body */
+body {
+    background-color: #f3f3f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do container principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo do header */
+header {
+    background: #ffcc00; /* Amarelo */
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do container de pesquisa no header */
+#search-container {
+    background: #ffcc00; /* Amarelo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#search-container h2 {
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#search-container .search-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-container label {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+#search-container input, 
+#search-container select, 
+#search-container button {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+#search-container input, 
+#search-container select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-container button {
+    background: #ffcc00; /* Amarelo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#search-container button:hover {
+    background: #e6b800; /* Tom mais escuro de amarelo */
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos títulos das seções */
+#destaques h2, 
+#noticias h2 {
+    color: #ffcc00; /* Amarelo */
+    margin-bottom: 10px;
+    font-size: 2em;
+    border-bottom: 2px solid #ffcc00; /* Amarelo */
+    display: inline-block;
+}
+
+/* Estilo dos destaques e notícias */
+.destaque, .noticia {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ffcc00; /* Amarelo */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.destaque img, .noticia img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.destaque h3, .noticia h3 {
+    color: #ffcc00; /* Amarelo */
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.destaque p, .noticia p {
+    color: #555;
+    font-size: 1em;
+}
+
+.destaque a, .noticia a {
+    color: #0073e6; /* Azul para chamar atenção */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.destaque a:hover, .noticia a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do footer */
+footer {
+    background: #ffcc00; /* Amarelo */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Classe para destacar cada div */
+.separa {
+    margin-bottom: 20px;
+}
+
+/* Animação */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

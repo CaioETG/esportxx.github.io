@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Esportivas</title>
+    <link rel="stylesheet" href="style.css"> <!-- Arquivo separado para estilos -->
+</head>
+<body>
+
+<header>
+    <div class="container separa">
+      <a href="index.html"> <h1>ESPORTEXX</h1></a>
+       
+        <nav>
+            <ul>
+               
+                <li><a href="futebol.html">Futebol</a></li>
+                <li><a href="basquete.html">Basquete</a></li>
+                <li><a href="nfl.html">NFL</a></li>
+                <li><a href="volei.html">Volei</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </div>
+      </div>
+   
+</header>
+
+<section id="destaques">
+    <div class="container separa">
+        <h2>Destaques</h2>
+        <div class="destaque separa">
+            <img src="carrossel-lesionados-hulk-fabricio.avif" alt="Notícia em destaque 1">
+            <h3>Veja os suspensos, lesionados e escalações prováveis para a rodada #10; mercado fecha às 18h59 (Brasília)</h3>
+            <p>Veja duas dicas pouco visadas por posição para a rodada
+                <a href="pagina2.html">ler mais</a>
+            </p>
+        </div>
+        <div class="destaque separa">
+            <img src="basquete titulp.jpg" alt="Notícia em destaque 2">
+            <h3>Boston Celtics ultrapassa Los Angeles Lakers e se isola como maior campeão da NBA; veja lista de títulos</h3>
+            <p>Nesta segunda-feira (17), o Boston Celtics venceu o Dallas Mavericks por 106 a 88 no Jogo 5 das Finais da NBA, fechou a série em 4 a 1 e conquistou o 18º título da história da franquia.
+                <a href="pagina3.html">ler mais</a>
+            </p>
+        </div>
+        <div class="destaque separa">
+            <img src="nfl brasil.jpg" alt="Notícia em destaque 3">
+            <h3>NFL no Brasil: detalhes de início de venda de ingressos para Eagles x Packers são divulgados</h3>
+            <p>A NFL anunciou nesta sexta-feira (31) os primeiros detalhes sobre a venda de ingressos para Philadelphia Eagles x Green Bay Packers.
+                <a href="pagina4.html">ler mais</a>    
+            </p>
+        </div>
+        <div class="destaque separa">
+            <img src="brasil-x-turquia volei.avif" alt="Notícia em destaque 3">
+            <h3>Brasil conhece rivais das Olimpíadas no vôlei feminino; veja grupos</h3>
+            <p>Líder do ranking mundial, seleção brasileira é cabeça de chave e escapa de grupo da morte
+                <a href="pagina5.html">ler mais</a>    
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="noticias">
+    <div class="container separa">
+        <h2>Últimas Notícias</h2>
+        <div class="noticia separa">
+            <img src="junior fogao.avif" alt="Notícia 1">
+            <h3>Júnior Santos 100 jogos: atacante teve "início de depressão" em saída e escolhe gol favorito no Botafogo </h3>
+            <p> Camisa 11 completa marca centenária contra o Athletico-PR, nesta quarta-feira, e fala ao ge sobre volta ao clube: "Missão não estava completa"
+                <a href="pagina6.html">ler mais</a>
+            </p>
+        </div>
+        <div class="noticia separa">
+            <img src="jayken brown.jpg" alt="Notícia 2">
+            <h3> Como Jaylen Brown superou 'profecia' de professora para ser o herói dos Celtics na NBA</h3>
+            <p>Mestre em Ciências Sociais, palestrante, vegano, amante de história, meditação, filosofia, xadrez, futebol e... MVP das FInais e campeão da NBA.
+                <a href="pagina7.html">ler mais</a>
+            </p>
+        </div>
+        <div class="noticia separa">
+            <img src="jogo nfl.jpg" alt="Notícia 3">
+            <h3>NFL anuncia Chiefs x Ravens no jogo de abertura da temporada; duelo será 'revanche' da final da AFC</h3>
+            <p>A NFL anunciou nesta segunda-feira (13) que o jogo de abertura da próxima temporada terá o atual campeão Kansas City Chiefs contra o Baltimore Ravens dentro do Arrowhead Stadium, no Missouri.
+                <a href="pagina8.html">ler mais</a>
+            </p>
+        </div>
+       
+        
+
+</section>
+
+<footer>
+    <div id="search-container" class="separa">
+        <h2>Pesquisa</h2>
+        <label for="search-input">Pesquisar por palavra-chave:</label>
+        <input type="text" id="search-input" placeholder="Digite palavras-chave">
+        <br><br>
+        <label for="category-filter">Filtrar por categoria:</label>
+        <select id="category-filter">
+            <option value="">Todas as categorias</option>
+            <option value="Futebol">Futebol</option>
+            <option value="Basquete">Basquete</option>
+            <option value="Tênis">Tênis</option>
+            <option value="Corrida">Corrida</option>
+        </select>
+        <br><br>
+        <label for="date-filter">Filtrar por data:</label>
+        <input type="date" id="date-filter">
+        <br><br>
+        <button onclick="search()">Pesquisar</button>
+        <div id="searchResults" class="separa"></div>
+
+    </div>
+
+    <div class="container separa">
+        <p>&copy; 2024 Notícias Esportivas. Todos os direitos reservados.</p>
+    </div>
+
+    <div class="legal">
+        <a href="politica.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a> | <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm">LGPD</a>
+    </div>
+
+</footer>
+
+<script>
+    function search() {
+        // Implementar a lógica de busca aqui
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* style.css */
+
+/* Reset de CSS para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo do body */
+body {
+    background-color: #f3f3f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do container principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo do header */
+header {
+    background: #0073e6;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos destaques */
+#destaques h2, #noticias h2 {
+    color: #0073e6;
+    margin-bottom: 10px;
+    font-size: 2em;
+    border-bottom: 2px solid #0073e6;
+    display: inline-block;
+}
+
+.destaque, .noticia {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #0073e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destaque img, .noticia img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.destaque h3, .noticia h3 {
+    color: #0073e6;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.destaque p, .noticia p {
+    color: #555;
+    font-size: 1em;
+}
+
+.destaque a, .noticia a {
+    color: #e60000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.destaque a:hover, .noticia a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 1.8em;
+}
+
+footer label, footer input, footer select, footer button {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+}
+
+footer input, footer select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background: #005bb5;
+}
+
+/* Classe para destacar cada div */
+.separa {
+    margin-bottom: 20px;
+}
+/* Animação */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
